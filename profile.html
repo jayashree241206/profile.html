@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>MY PERSONAL PORTFOLIO</title>
+</head>
+
+<style>
+    body {
+     text-align:center;
+     font: Arial;
+}
+
+h1 {
+text-align=center;
+}
+
+.box{
+margin: 10px auto;
+}
+
+input , select {
+width: 300px;
+height: 40px;
+padding: 5px;
+font-size: 16px;
+}
+   button {
+            width: 150px;
+            height: 45px;
+            font-size: 18px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+}
+
+</style>
+</head>
+<body>
+<h1>MY PERSONAL PORTFOLIO</h1>
+<form id="myForm">
+<div class="row">
+<label for="name">Name : </label>
+<input type: "text" placeholder="Enter Your Name: "><br><br>
+</div>
+
+</div class="row">
+<label for = "college">Select Your College: </label>
+<select id = "college" name = "college">
+<option value="">----Select College----</option>
+<option value="Anna univ"> Anna University</option>
+<option value="CIT">Chennai Institute of Technology</option>
+<option value="MIT">Madras Institute of Technology</option>
+<option value="RMKEC">R.M.K. Engineering College </option>
+<option value="RMDEC">R.M.D. Engineering College</option>
+<option value="RMKCET">R.M.K College Of Engineering And Technology</option>
+<option value="TJS">TJS Engineering College</option>
+<option value="REC">Rajalakshmi Engineering College</option>
+<option value="Others">Others</option>
+</select>
+</div>
+<div class="row" id="OthersCollegeDiv" style="display:none;">
+<input type = "text" placeholder="Enter The College Name:"></div><br><br>
+
+<div class="row">
+<label for="PROJECT NAME">Project: </label>
+<input type="text" id="project" placeholder="Enter Project Title"><br><br>
+</div>
+
+<div class="row">
+<label for="skills">Skills: </label>
+<input type="text" id="skills" placeholder="Enter the skills"><br><br>
+</div>
+
+</div>
+<label for="comments">Comments: </label>
+<input type="text" id="feedback" placeholder="Commnents(if any)"><br><br>
+</div>
+
+<button type="submit">Submit</button>
+</form>
+<script>
+const collegeSelect = document.getElementById("College");
+const otherDiv = document.getElementById("otherCollegeDiv");
+
+CollegeSelect.addEventListener("Change" , function() {
+if(this.value === "Others") {
+other.Div.style.display = "block";
+}
+
+else {
+others.Div.style.display = "None";
+}
+
+    });
+</script>
+</body>
+</html>
